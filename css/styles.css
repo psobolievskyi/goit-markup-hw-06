@@ -49,6 +49,7 @@ img {
 }
 /* Site header */
 .my-header {
+  position: relative;
   border-bottom: 1px solid #e7e9fc;
   display: flex;
   flex-wrap: nowrap;
@@ -443,6 +444,52 @@ footer .logo-span {
 .footer-icon-item-link:focus {
   background-color: #31d0aa;
 }
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+}
+.mobile-team-icons-list {
+  gap: 0;
+  justify-content: space-between;
+}
+.container-mobile {
+  padding: 72px 24px 24px 24px;
+  height: 100%;
+}
+.is-open {
+  display: block !important;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-link-list {
+  list-style: none;
+}
+.mobile-nav-link {
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.mob-contact-info {
+  margin: 0 0 50px 0;
+}
+.mobile-flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* Contact Form */
 .form-container {
   margin-left: auto;
@@ -680,6 +727,7 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   margin-top: 12px;
   margin-bottom: 12px;
   margin-left: auto;
+  cursor: pointer;
 }
 .hamburger-icon {
   display: block;
@@ -719,6 +767,12 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   .advantage-icons {
     display: none;
   }
+  .advantages-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
   /* Team section */
   .team-list {
     flex-wrap: wrap;
@@ -750,7 +804,7 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   .my-menu {
     display: none;
   }
-  address {
+  .contact-info {
     display: none;
   }
   .container {
@@ -785,15 +839,10 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
     width: 100%;
   }
 
-  .advantages-title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
   /* Team section */
   .team-list {
     flex-direction: column;
+    padding: 0;
   }
   .team-item {
     width: 100%;
@@ -818,5 +867,8 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   }
   .form-container {
     margin: 0;
+  }
+  .modal {
+    width: 288px;
   }
 }

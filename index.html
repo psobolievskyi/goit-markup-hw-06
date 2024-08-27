@@ -14,6 +14,13 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="./js/my-js.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -49,11 +56,79 @@
           </ul>
         </address>
         <div class="hamburger">
-          <a class="hamburger-link" href="">
-            <svg class="hamburger-icon" width="24" height="24">
-              <use href="./images/icons.svg#hamburger-icon"></use>
+          <svg class="hamburger-icon" width="24" height="24">
+            <use href="./images/icons.svg#hamburger-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="container-mobile">
+          <button class="modal-button" type="button">
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-icon"></use>
             </svg>
-          </a>
+          </button>
+          <div class="mobile-flex-container">
+            <nav class="mobile-nav">
+              <li class="mobile-link-list">
+                <a class="mobile-nav-link" href="">Studio</a>
+              </li>
+              <li class="mobile-link-list">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-link-list">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </nav>
+            <div class="mobile-contacts">
+              <address class="mob-contact-info">
+                <ul class="contact-info-row">
+                  <li>
+                    <a class="address-link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="address-link" href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div class="mobile-socials">
+                <ul class="team-icons-list mobile-team-icons-list">
+                  <li class="team-icons">
+                    <a class="team-icons-link" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons">
+                    <a class="team-icons-link" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons">
+                    <a class="team-icons-link" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icons">
+                    <a class="team-icons-link" href="">
+                      <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
