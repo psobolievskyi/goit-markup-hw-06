@@ -736,6 +736,7 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 70px;
+    padding: 0 92px;
   }
   .footer-logo {
     margin: 0;
