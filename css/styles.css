@@ -39,6 +39,7 @@ h6 {
 }
 img {
   display: block;
+  width: 100%;
 }
 .link {
   font-weight: Regular;
@@ -60,9 +61,10 @@ img {
 .header-row {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -165,6 +167,16 @@ address a:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-img@2x.jpg);
+  }
 }
 .hero-title {
   display: block;
@@ -736,18 +748,13 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
 .container-modal {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1158px) {
   body,
   html {
     overflow-x: hidden;
     overflow-y: auto;
   }
-  .container {
-    width: 736px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   /* Site header */
   .contact-info-row {
     flex-direction: column;
@@ -771,7 +778,6 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
   }
   /* Team section */
   .team-list {
@@ -799,7 +805,15 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
     margin: 0;
   }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* Site header */
   .my-menu {
     display: none;
@@ -807,19 +821,12 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   .contact-info {
     display: none;
   }
-  .container {
-    width: 288px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .hamburger {
     display: block;
   }
   /* Hero section */
-  .hero-section {
-    padding: 74px 0;
-  }
+
   .hero-title {
     font-size: 36px;
     line-height: 1.11;
@@ -828,9 +835,7 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
     width: 216px;
   }
   /* Advantages section */
-  .advantages {
-    padding: 94px 0;
-  }
+
   .advanrage-list {
     flex-direction: column;
     gap: 72px;
@@ -861,14 +866,31 @@ input[type="checkbox"]:checked + .user-privacy-label > .user-privacy-span {
   .footer-container {
     flex-direction: column;
     gap: 72px;
+    align-items: center;
+    text-align: center;
   }
   .contact-form {
     flex-direction: column;
+    align-items: center;
   }
   .form-container {
     margin: 0;
+    align-items: center;
   }
   .modal {
     width: 288px;
+  }
+  .advantages-title {
+    text-align: center;
+    text-align: center;
+  }
+  footer .logo {
+    margin: 0;
+  }
+  .contact-form-button {
+    width: 165px;
+  }
+  .footer-icons-text {
+    text-align: center;
   }
 }
